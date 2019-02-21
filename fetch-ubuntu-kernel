@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+const main = require('./index');
+
+const [ , , version ] = process.argv;
+
+if (!version) {
+  console.error('No version');
+}
+
+main(version);
